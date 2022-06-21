@@ -5,27 +5,28 @@
     <div class="blue-section">
         <div class="card">
           <img src="./assets/img/buy-comics-digital-comics.png" alt="">
-          <div></div>
+          <div>DIGITAL COMICS</div>
         </div>
         <div class="card">
           <img src="./assets/img/buy-comics-merchandise.png" alt="">
-          <div></div>
+          <div>DC MERCHANDISE</div>
         </div>
         <div class="card">
           <img src="./assets/img/buy-comics-subscriptions.png" alt="">
-          <div></div>
+          <div>SUBSCRIPTION</div>
         </div>
         <div class="card">
           <img src="./assets/img/buy-comics-shop-locator.png" alt="">
-          <div></div>
+          <div>COMIC SHOP LOCATOR</div>
         </div>
         <div class="card">
           <img src="./assets/img/buy-dc-power-visa.svg" alt="">
-          <div></div>
+          <div>DC POWER VISA</div>
         </div>
     </div>
-    <BannerSignUp></BannerSignUp>
     <MyFooter></MyFooter>
+    <BannerSignUp></BannerSignUp>
+
   </div>
 </template>
 
@@ -65,16 +66,25 @@ export default {
 
 .blue-section {
   background-color: #1E82F6;
-  // height: 150px;
+  min-height: 100px;
+  max-height: 150px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.blue-section img {
-  width: 30%;
-  height: 30%;
+.card {
   display: flex;
+  height: 40px;
+  align-items: center;
+  color: #fff;
+  
+}
+
+.blue-section img {
+  height: 100%;
+  display: flex;
+  padding: 0.5rem;
 }
 
 

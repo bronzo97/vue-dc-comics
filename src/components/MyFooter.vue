@@ -1,5 +1,7 @@
 <template>
-    <h2>Footer</h2>
+    <footer>
+
+    </footer>
 </template>
 
 <script>
@@ -8,3 +10,12 @@ export default {
 
 }
 </script>
+
+<style>
+
+    footer {
+        background-image: url('../assets/img/footer-bg.jpg');
+        height: 400px;
+    }
+
+</style>

@@ -1,7 +1,7 @@
 <template>
     <div class="row row-cols-6">
     <div class="col" v-for="products in products" :key="products.cardImg">
-    <ProductCard :card-title="products.series"></ProductCard>
+    <ProductCard :card-title="products.series" :card-img="products.thumb"></ProductCard>
     </div>
     
     </div>

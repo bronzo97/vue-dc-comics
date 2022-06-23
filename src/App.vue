@@ -1,7 +1,7 @@
 <template>
   <div>
     <MyNavbar></MyNavbar>
-    <div class="content-here">--> Content here &lt;-- </div>
+    <ProductsList></ProductsList>
     <div class="blue-section">
         <div class="my-card" v-for="(imgage, i) in dcCards" :key="i">
           <img :src="imgage.img" alt="">
@@ -20,14 +20,16 @@
 import MyNavbar from './components/MyNavbar.vue';
 import MyFooter from './components/MyFooter.vue';
 import BannerSignUp from './components/BannerSignUp.vue';
+import ProductsList from './components/ProductsList.vue';
 
 export default {
   name: 'App',
   components: {
     MyNavbar,
     MyFooter,
-    BannerSignUp
-  },
+    BannerSignUp,
+    ProductsList,
+},
   data() {
     return {
       dcCards: [

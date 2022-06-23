@@ -1,10 +1,14 @@
 <template>
-    <div class="row row-cols-6">
-    <div class="col" v-for="products in products" :key="products.cardImg">
-    <ProductCard :card-title="products.series" :card-img="products.thumb"></ProductCard>
+<div class="my-content">
+    <div class="container">
+        <div class="row row-cols-6">
+            <div class="col text-center" v-for="products in products" :key="products.cardImg">
+                <ProductCard :card-title="products.series" :card-img="products.thumb"></ProductCard>
+            </div>
+        </div>
     </div>
+</div>
     
-    </div>
 </template>
 
 <script>

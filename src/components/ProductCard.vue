@@ -1,11 +1,11 @@
 <template>
     <div>
-        <div class="card.img">
-            <img :src="cardImg" alt="">
+        <div>
+            <img :src="cardImg" alt="" class="my-card-img">
         </div>
-    <div class="card-title">
-        <h5>{{cardTitle}}</h5>
-    </div>
+        <div class="card-title">
+            <h5>{{cardTitle}}</h5>
+        </div>
     </div>
 </template>
 
@@ -19,7 +19,7 @@ export default {
     },
     data () {
         return{
-            
+
         }
     }
 }
